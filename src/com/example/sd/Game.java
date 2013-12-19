@@ -8,9 +8,6 @@ public class Game
 
 	private int[] shuduNumber = new int[9 * 9];
 
-	// 记录不可用的数字
-	private int used[][][] = new int[9][9][];
-
 	public Game()
 	{
 		shuduNumber = fromPuzzleString(str);
