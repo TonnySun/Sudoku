@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Paint.FontMetrics;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 public class ShuduView extends View
 {
@@ -126,8 +127,14 @@ public class ShuduView extends View
 //			index++;
 //		}
 		
-		KeyDialog keyDialog = new KeyDialog(getContext(), used, this);
-		keyDialog.show();
+		//调出一个对话框，显示1-9，并且将不可用的数字灰显
+//		KeyDialog keyDialog = new KeyDialog(getContext(), used, this);
+//		keyDialog.show();
+		
+		//尝试使用输入法
+		InputMethodManager inputMethodManager = (InputMethodManager)(getContext().getSystemService(Context.INPUT_METHOD_SERVICE));
+		inputMethodManager.showSoftInput(null, 2);
+		boolean flag = inputMethodManager.isActive();
 		
 //		LayoutInflater inflater = LayoutInflater.from(this.getContext());
 //		View layoutView = inflater.inflate(R.layout.dialog, null);

@@ -79,7 +79,7 @@ public class Game
 		{
 			for (int j = startY; j < startY + 3; j++)
 			{
-				int temp = getTile(i, j);
+				int temp = getTile(j, i);
 				if (temp != 0)
 				{
 					singleUsed[temp - 1] = temp;
