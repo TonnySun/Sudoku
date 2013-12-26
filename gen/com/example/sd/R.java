@@ -13,6 +13,7 @@ public final class R {
     public static final class color {
         public static final int shudu_background=0x7f040000;
         public static final int shudu_dark=0x7f040003;
+        public static final int shudu_down=0x7f040004;
         public static final int shudu_hilte=0x7f040001;
         public static final int shudu_light=0x7f040002;
     }
@@ -30,17 +31,18 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
-        public static final int key1=0x7f090001;
-        public static final int key2=0x7f090002;
-        public static final int key3=0x7f090003;
-        public static final int key4=0x7f090004;
-        public static final int key5=0x7f090005;
-        public static final int key6=0x7f090006;
-        public static final int key7=0x7f090007;
-        public static final int key8=0x7f090008;
-        public static final int key9=0x7f090009;
-        public static final int unusednum=0x7f090000;
+        public static final int action_settings=0x7f09000b;
+        public static final int key1=0x7f090002;
+        public static final int key2=0x7f090003;
+        public static final int key3=0x7f090004;
+        public static final int key4=0x7f090005;
+        public static final int key5=0x7f090006;
+        public static final int key6=0x7f090007;
+        public static final int key7=0x7f090008;
+        public static final int key8=0x7f090009;
+        public static final int key9=0x7f09000a;
+        public static final int layout=0x7f090000;
+        public static final int unusednum=0x7f090001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

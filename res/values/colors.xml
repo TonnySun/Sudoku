@@ -5,5 +5,6 @@
     <color name="shudu_hilte">#FFFFFFFF</color>
     <color name="shudu_light">#64C6D4EF</color>
     <color name="shudu_dark">#6456658F</color>
+    <color name="shudu_down">#FFC8DEFF</color>
     
 </resources>

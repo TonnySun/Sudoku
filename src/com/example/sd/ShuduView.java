@@ -11,9 +11,13 @@ import android.view.inputmethod.InputMethodManager;
 
 public class ShuduView extends View
 {
-	private float width;
+	private int width;
 	
-	private float height;
+	private int height;
+	
+	private int x;
+	
+	private int y;
 	
 	private Game game;
 	
@@ -27,14 +31,21 @@ public class ShuduView extends View
 		super(context);
 
 		game = new Game();
-		// TODO Auto-generated constructor stub
+	}
+	
+	public void setBounds (int x, int y, int width, int height)
+	{
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
 	}
 	
 	@Override
 	protected void onSizeChanged(int w, int h, int oldw, int oldh)
 	{
-		width = w / 9f;
-		height = h /9f;
+		width = (int)(w / 9f);
+		height = (int)(h /9f);
 		super.onSizeChanged(w, h, oldw, oldh);
 	}
 	
@@ -132,10 +143,15 @@ public class ShuduView extends View
 //		keyDialog.show();
 		
 		//尝试使用输入法
-		InputMethodManager inputMethodManager = (InputMethodManager)(getContext().getSystemService(Context.INPUT_METHOD_SERVICE));
-		inputMethodManager.showSoftInput(null, 2);
-		boolean flag = inputMethodManager.isActive();
+//        setFocusable(true);
+//		InputMethodManager inputMethodManager = (InputMethodManager)(getContext().getSystemService(Context.INPUT_METHOD_SERVICE));
+//		inputMethodManager.showSoftInput(this, 0);
+//		boolean flag = inputMethodManager.isActive();
 		
+		
+		InputMethodManager imm = (InputMethodManager)getContext().getSystemService(Context.INPUT_METHOD_SERVICE); 
+        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);  
+        
 //		LayoutInflater inflater = LayoutInflater.from(this.getContext());
 //		View layoutView = inflater.inflate(R.layout.dialog, null);
 //		
