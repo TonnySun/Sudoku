@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 
 public class MyView extends ViewGroup
 {
+	
+	private final int COLUM = 10;
 
 	public MyView(Context context, AttributeSet attrs)
 	{
@@ -30,9 +32,10 @@ public class MyView extends ViewGroup
 	@Override
 	protected void onLayout(boolean changed, int l, int t, int r, int b)
 	{
-		// TODO Auto-generated method stub
-		getChildAt(0).layout(0, 0, 720, 800);
-		getChildAt(1).layout(0, 800, 720, 300);
+		getChildAt(0).layout(0, 0, getWidth(), (int)(getHeight() * 9 / COLUM));
+		
+		getChildAt(1).layout(0, (int)(getHeight() * 9 / COLUM), getWidth(), getHeight());
+		
 	}
 
 

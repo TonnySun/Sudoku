@@ -10,7 +10,6 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class MainActivity extends Activity
 {
-	private final int COLUM = 10;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -33,6 +32,7 @@ public class MainActivity extends Activity
 		
 		ShuduView shuduView = new ShuduView(this);
 		MenuView menuView = new MenuView(this);
+		
 		
 		view.addView(shuduView);
 		view.addView(menuView);

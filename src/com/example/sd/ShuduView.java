@@ -54,7 +54,7 @@ public class ShuduView extends View
 	{
 		Paint backgroundPaint = new Paint();
 		backgroundPaint.setColor(getResources().getColor(R.color.shudu_background));
-		canvas.drawRect(0, 0, getWidth(), getHeight(), backgroundPaint);
+		canvas.drawRect(x, y, getWidth(), getHeight(), backgroundPaint);
 		
 		Paint hilitePaint = new Paint();
 		hilitePaint.setColor(getResources().getColor(R.color.shudu_hilte));
