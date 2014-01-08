@@ -24,13 +24,33 @@ public class ShuduView extends View
 	private int selectX;
 	
 	private int selectY;
+	
+	private int level = 1;
+
+	public int getLevel()
+	{
+		return level;
+	}
+
+	public void setLevel(int level)
+	{
+		this.level = level;
+		game.setLevel(level);
+		game.processSudokuNumber();
+		updateSudokuView();
+	}
+	
+	public void updateSudokuView()
+	{
+		invalidate();
+	}
 
 	public ShuduView(Context context)
 	{
 		
 		super(context);
 
-		game = new Game();
+		game = new Game(level);
 	}
 	
 	public void setBounds (int x, int y, int width, int height)

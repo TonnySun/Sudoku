@@ -10,6 +10,9 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class MainActivity extends Activity
 {
+	private ShuduView  shuduView;
+	
+	private MenuView menuView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -30,8 +33,8 @@ public class MainActivity extends Activity
 		
 //		view.setLayoutParams(new LinearLayout.LayoutParams(width, height));
 		
-		ShuduView shuduView = new ShuduView(this);
-		MenuView menuView = new MenuView(this);
+		shuduView = new ShuduView(this);
+		menuView = new MenuView(this);
 		
 		
 		view.addView(shuduView);
@@ -39,6 +42,16 @@ public class MainActivity extends Activity
 
 		setContentView(view);
 //		setContentView(new ShuduView(this));
+	}
+	
+	public void updateSudokuView (int level)
+	{
+		shuduView.setLevel (level);
+	}
+	
+	public void updateMenuView ()
+	{
+		// TODO
 	}
 	
 	@Override

@@ -31,7 +31,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000b;
+        public static final int action_settings=0x7f09000f;
+        public static final int dailog_menu_level_difficult=0x7f09000e;
+        public static final int dailog_menu_level_middle=0x7f09000d;
+        public static final int dailog_menu_level_single=0x7f09000c;
+        public static final int dialog_menu_level_radiogroup=0x7f09000b;
         public static final int key1=0x7f090002;
         public static final int key2=0x7f090003;
         public static final int key3=0x7f090004;
@@ -48,6 +52,7 @@ public final class R {
         public static final int activity_main=0x7f030000;
         public static final int dialog=0x7f030001;
         public static final int keydialog=0x7f030002;
+        public static final int leveldialog=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -56,6 +61,11 @@ public final class R {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060002;
+        public static final int menu_level_difficult=0x7f060005;
+        public static final int menu_level_middle=0x7f060004;
+        /**  难度级别 
+         */
+        public static final int menu_level_single=0x7f060003;
     }
     public static final class style {
         /** 
